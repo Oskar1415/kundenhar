@@ -1,0 +1,93 @@
+
+body{
+    background-color: black;
+    color: white;
+}
+
+#wrapper{
+    display: grid;
+
+    grid-template-areas: 
+    "nav nav"
+    "ser ser"
+    "pop pop"
+    "bo1 bo1"
+    "bo2 bo2"
+    ;
+    grid-template-rows: 3rem 10rem 5rem 5rem 5rem;
+}
+
+
+/*nav*/
+
+nav{
+    grid-area: nav;
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    padding: 10px;
+    
+}
+
+#planer{
+    align-self: flex-start;
+    margin-left: auto;
+    padding: 0px 30px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#omoss{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*searchbar*/
+
+#search{
+    grid-area: ser;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchbox {
+    border-radius: 10px;
+    font-size: large;
+    background-color: #b202fa;
+    color: aliceblue;
+    
+    
+}
+::placeholder {
+    color: white;
+}
+
+/*pop*/
+
+#pop{
+    grid-area: pop;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: monFrame 20s linear 5s infinite;
+}
+
+@keyframes monFrame {
+    0%   {left:-100px; top:0px;}
+    100%  {left:500px; top:0px;}
+   }
+
+
+
+#bok1{
+    grid-area: bo1;
+}
+
+#bok2{
+    grid-area: bo2;
+}
