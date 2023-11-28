@@ -70,17 +70,28 @@ nav{
 
 #pop{
     grid-area: pop;
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 10px;
+    
+
     position: relative;
-    animation: monFrame 20s linear 5s infinite;
+    animation: monFrame 30s linear 5s infinite; /*ändra 5s för att göra så att den börjar direkt*/
 }
 
 @keyframes monFrame {
-    0%   {left:-100px; top:0px;}
-    100%  {left:500px; top:0px;}
-   }
+    0%   {left:-750px; top:0px;}
+    100%  {left: -30px; top:0px;}
+}
+
+
+.pop{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 5px;
+}
 
 
 
