@@ -1,7 +1,7 @@
-
 body{
     background-color: black;
     color: white;
+    width: 1vh;
 }
 
 #wrapper{
@@ -14,7 +14,7 @@ body{
     "bo1 bo1"
     "bo2 bo2"
     ;
-    grid-template-rows: 3rem 10rem 5rem 5rem 5rem;
+    grid-template-rows: 3rem 10rem 20rem 5rem 5rem;
 }
 
 
@@ -68,29 +68,79 @@ nav{
 
 /*pop*/
 
-#pop{
+#pop2{
     grid-area: pop;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(32, 1fr);
     gap: 10px;
+
     
 
     position: relative;
-    animation: monFrame 30s linear 5s infinite; /*ändra 5s för att göra så att den börjar direkt*/
+    animation: monFrame 50s linear 1s infinite;
+
 }
 
+#pop, #pop img {
+    --duration: 1000ms;
+}
+
+#pop {
+    width: 100%;
+    position: relative;
+    grid-area: pop;
+    gap: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(32, 1fr);
+    --duration: 20s;
+    height: 100px;
+    background: red;
+    transform: translateX(0);
+    transition: calc(var(--duration) * .1) ease-out;
+}
+
+#pop:hover {
+    transform: translateX(-0.5%);
+}
+#pop2:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translate(-100%);
+   }
+}
+
+
+#pop:hover{
+    /* animation-duration: 80000s !important; */
+    -moz-animation-play-state:paused;
+    animation-play-state:paused;
+    cursor: pointer;
+    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    /* animation: monFrame 50s ease-in 1s infinite; */
+  }
+
+
+
 @keyframes monFrame {
-    0%   {left:-750px; top:0px;}
-    100%  {left: -30px; top:0px;}
+    0%   {left: -50%}
+    100%  {left: -0.2%}
 }
 
 
 .pop{
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     background-color: red;
     border-radius: 5px;
+    
 }
 
 
