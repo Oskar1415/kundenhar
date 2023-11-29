@@ -1,7 +1,7 @@
 body{
     background-color: black;
     color: white;
-    width: 1vh;
+
 }
 
 #wrapper{
@@ -15,6 +15,7 @@ body{
     "bo2 bo2"
     ;
     grid-template-rows: 3rem 10rem 20rem 5rem 5rem;
+    grid-template-columns: 50vw 1fr;
 }
 
 
@@ -68,64 +69,24 @@ nav{
 
 /*pop*/
 
-#pop2{
+#pop{
     grid-area: pop;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(32, 1fr);
     gap: 10px;
+    overflow: hidden;
 
-    
-
-    position: relative;
-    animation: monFrame 50s linear 1s infinite;
 
 }
 
-#pop, #pop img {
-    --duration: 1000ms;
-}
-
-#pop {
-    width: 100%;
-    position: relative;
-    grid-area: pop;
-    gap: 10px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(32, 1fr);
-    --duration: 20s;
-    height: 100px;
-    background: red;
-    transform: translateX(0);
-    transition: calc(var(--duration) * .1) ease-out;
-}
-
-#pop:hover {
-    transform: translateX(-0.5%);
-}
-#pop2:hover {
-    animation-play-state: paused;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-   }
-    100% {
-        transform: translate(-100%);
-   }
-}
 
 
 #pop:hover{
-    /* animation-duration: 80000s !important; */
     -moz-animation-play-state:paused;
     animation-play-state:paused;
     cursor: pointer;
-    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
-    /* animation: monFrame 50s ease-in 1s infinite; */
-  }
+}
 
 
 
@@ -147,7 +108,14 @@ nav{
 
 #bok1{
     grid-area: bo1;
+    display: flex;
+    justify-content: space-around;
 }
+#bok1img{
+
+    
+}
+
 
 #bok2{
     grid-area: bo2;
