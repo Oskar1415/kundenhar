@@ -1,6 +1,8 @@
 body{
     background-color: black;
     color: white;
+    padding: 0px;
+    margin: 0px;
 
 }
 
@@ -15,7 +17,7 @@ body{
     "bo2 bo2"
     "fot fot"
     ;
-    grid-template-rows: 3rem 15rem auto auto auto 10rem;
+    grid-template-rows: 3rem 20rem auto auto auto 10rem;
     grid-template-columns: 50vw 1fr;
 }
 
@@ -29,6 +31,14 @@ nav{
     justify-content: space-between;
     font-size: large;
     padding: 10px;
+    
+}
+
+#logo{
+    height: 40px;
+    z-index: 10;
+    
+
     
 }
 
@@ -50,11 +60,23 @@ nav{
 
 #search{
     grid-area: ser;
-    background-color: blue;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    background-image: url("../img/leaves.jpg");
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
 }
+
+#search_background{
+    height: 100px;
+    
+}
+
 
 #searchbox {
     border-radius: 10px;
@@ -62,11 +84,19 @@ nav{
     background-color: #b202fa;
     color: aliceblue;
     
-    
 }
+
 ::placeholder {
     color: white;
 }
+
+
+#searchasd{
+    display: flex;
+    position:relative;
+    text-align: center;
+}
+
 
 /*pop*/
 
@@ -160,9 +190,9 @@ nav{
 
 
 
-/*Footnote*/
+/*Footer*/
 
-#footnote{
+#footer{
     grid-area: fot;
     background-color: #b202fa;
 }
