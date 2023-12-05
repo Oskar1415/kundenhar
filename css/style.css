@@ -198,11 +198,10 @@ nav{
 
     
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, 200px);
     gap: 100px;
-    padding: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 50px 100px 500px 100px;
+    justify-content: center;
 
   
     
