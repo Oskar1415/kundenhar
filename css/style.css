@@ -43,7 +43,7 @@ body{
 
 nav{
     grid-area: nav;
-    background-color:#FAAB02;
+    background-color: #B202FA;
     display: flex;
     justify-content: space-between;
     font-size: large;
@@ -76,11 +76,11 @@ nav{
 }
 
 #omoss.active{
-    color: #B202FA;
+    color: yellow;
 }
 
 #planer.active{
-    color: #B202FA;
+    color: yellow;
 }
 
 
@@ -147,18 +147,6 @@ nav{
 
 
 
-#pop:hover{
-    -moz-animation-play-state:paused;
-    animation-play-state:paused;
-    cursor: pointer;
-}
-
-
-
-@keyframes monFrame {
-    0%   {left: -50%}
-    100%  {left: -0.2%}
-}
 
 
 .pop{
@@ -180,7 +168,8 @@ nav{
 
 
     border-radius: 5px;
-    padding: 50px;
+    padding: 10vw;
+    gap: 30px;
 }
 
 #box1text{
@@ -188,10 +177,13 @@ nav{
 }
 
 #bok1img{
-    width: 40%;
+    width: 30vw;
     height:fit-content;
     border-radius: 10px;
-    border: 5px solid #b202fa
+    border: 5px solid #b202fa;
+
+
+
     
 }
 
@@ -203,7 +195,10 @@ nav{
     display: flex;
 
     border-radius: 5px;
-    padding: 5px;
+    padding: 10vw;
+    gap: 30px;
+
+
     
 }
 
@@ -214,12 +209,16 @@ nav{
 }
 
 #bok2img{
-    width: 40%;
+    width: 30vw;
     height:fit-content;
     border-radius: 10px;
     display: flex;
     align-content:flex-end;
-    border: 5px solid #b202fa
+    border: 5px solid #b202fa;
+
+    
+
+    
     
 }
 
